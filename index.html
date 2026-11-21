@@ -1,99 +1,33 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0d0e10">
-  <meta name="color-scheme" content="dark">
-  <meta name="description" content="PintiSubs Studio: Oyun içi diyalogları ve görevleri ekrandan Türkçeye çeviren, yerel AI ve kişisel arşiv destekli açık geliştirme projesi.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="PintiSubs Studio — Oyunun akışını bozma">
-  <meta property="og:description" content="Diyalogları ve görevleri Türkçe takip et. Arşiv, yerel AI ve tek dokunuşla çeviri.">
-  <meta property="og:url" content="https://pinticrm.github.io/pintisubs-site/">
-  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/site.css">
-  <title>PintiSubs Studio — Oyun içi Türkçe çeviri</title>
-  <script src="assets/site.js" defer></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b0b0a">
+<meta name="description" content="PintiSubs: Windows oyunlarında konuşmaları, görevleri ve oyun içi telefon bildirimlerini canlı Türkçeye çeviren bağımsız araç.">
+<meta property="og:title" content="PintiSubs — Oyunu anla. Akışı bozma."><meta property="og:description" content="Üç katmanlı oyun içi Türkçe çeviri. Yerel AI veya bulut. Tek tuşla başlat.">
+<title>PintiSubs — Oyunun dilini anla.</title>
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css"><script src="assets/site.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">İçeriğe geç</a>
-  <header class="topbar">
-    <div class="container nav-shell">
-      <a class="brand" href="#top" aria-label="PintiSubs ana sayfa">
-        <img src="assets/mark.svg" width="36" height="36" alt="">
-        <span>PINTI<span class="brand-orange">SUBS</span><small>STUDIO</small></span>
-      </a>
-      <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Menüyü aç">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="navigation" class="navigation" aria-label="Ana menü">
-        <a href="#ozellikler">Özellikler</a>
-        <a href="#nasil">Nasıl çalışır?</a>
-        <a href="#gizlilik">Gizlilik</a>
-        <a class="nav-release" href="https://github.com/pinticrm/pintisubs-site/releases/tag/v5.3-preview" rel="noopener noreferrer">Windows önizleme <span aria-hidden="true">↗</span></a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="hero container" id="top">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-rule"></span> PINTISUBS STUDIO <span class="eyebrow-dot">·</span> V5.3 PREVIEW</p>
-        <h1>OYUNUN AKIŞINI<br><span>BOZMA.</span></h1>
-        <p class="hero-lead">Repliği kaçırma. Görevi tahmin etme. Ekrandaki İngilizce diyalogları ve görev metinlerini Türkçe takip et.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="https://github.com/pinticrm/pintisubs-site/releases/tag/v5.3-preview" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 17v3h14v-3"/></svg>
-            Windows için indir <span class="arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="button button-ghost" href="#nasil">Nasıl çalışır? <span aria-hidden="true">↓</span></a>
-        </div>
-        <div class="hero-footnotes"><span><i class="small-dot"></i> Windows 10 / 11</span><span><i class="small-dot"></i> Yerel AI seçeneği</span><span><i class="small-dot"></i> Önizleme sürümü</span></div>
-      </div>
-      <div class="mock-frame" aria-label="PintiSubs masaüstü arayüzünün temsilî görünümü" role="img">
-        <div class="mock-titlebar"><div class="mock-dots"><i></i><i></i><i></i></div><span>PINTISUBS / STUDIO</span><span class="mock-version">5.1</span></div>
-        <div class="mock-content">
-          <div class="mock-sidebar"><div class="mini-logo">P<span>·</span></div><div class="mock-sideitem active"><span class="side-square"></span> Çeviri</div><div class="mock-sideitem"><span class="side-circle"></span> Ayarlar</div><div class="mock-side-bottom">ÖNİZLEME<br>RELEASE 5.3</div></div>
-          <div class="mock-main">
-            <div class="mock-toprow"><span class="mini-tag"><i></i> EKRAN TAKİBİ</span><span class="mock-status">HAZIR</span></div>
-            <div class="mock-section-label">CANLI ÇEVİRİ</div>
-            <div class="mock-source">“You ever miss the army?”</div>
-            <div class="mock-translation">“Askerlik günlerini hiç özlüyor musun?”</div>
-            <div class="mock-hairline"></div>
-            <div class="mock-toprow"><span class="mini-tag orange">GÖREV / HEDEF</span><span class="mock-status">AYRI OCR ALANI</span></div>
-            <div class="mock-quest"><span class="quest-check"></span><span>Karim'le konuş</span></div>
-            <div class="mock-hairline"></div>
-            <div class="mock-stats"><div><span>ÇEVİRİ KAYNAĞI</span><strong>Arşiv + Yerel AI</strong></div><div><span>KULLANICI KONTROLÜ</span><strong>Tek Başlat / Durdur</strong></div></div>
-            <div class="mock-cta"><span class="mock-play">▶</span> ÇEVİRİYİ BAŞLAT</div>
-          </div>
-        </div>
-        <div class="mock-footer">TEMSiLÎ ARAYÜZ · GERÇEK UYGULAMA GÖRÜNÜMÜ SÜRÜME GÖRE FARKLILIK GÖSTEREBİLİR</div>
-      </div>
-    </section>
-
-    <div class="ticker" aria-label="Öne çıkan özellikler"><div class="ticker-inner"><span>TEK TUŞLA ÇEVİRİ</span><span class="cross">✳</span><span>GÖREV OCR</span><span class="cross">✳</span><span>YEREL AI</span><span class="cross">✳</span><span>KİŞİSEL ARŞİV</span><span class="cross">✳</span><span>İSTEĞE BAĞLI GÜNCELLEMELER</span></div></div>
-
-    <section class="section container" id="ozellikler">
-      <div class="section-heading"><div><p class="eyebrow">01 / NE YAPIYOR?</p><h2>ÇEVİRİ, OYUNUN<br>İÇİNDE KALSIN.</h2></div><p>Menülerde boğulmadan, oyuna odaklan. PintiSubs metni ekranından okur; sen nerede ve nasıl çevireceğine karar verirsin.</p></div>
-      <div class="feature-grid">
-        <article class="feature feature-large"><div class="feature-number">01</div><div class="iconbox"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h6M7 17h4"/></svg></div><h3>Diyalog + görev,<br>ayrı ayrı.</h3><p>Altyazı ve görev hedefi için iki bağımsız ekran alanı. Görev metni, konuşmanın üstüne binmez.</p><div class="graphic-lines"><span></span><span></span><span></span></div></article>
-        <article class="feature"><div class="feature-number">02</div><div class="iconbox"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="8" width="19" height="8" rx="4"/><path d="M7 12h4m-2-2v4M16.5 11h.01m2 2h.01"/></svg></div><h3>Tek bir Başlat / Durdur.</h3><p>Başlatmak için sayfa sayfa dolaşma. İşlem kontrolü her yerde aynı.</p></article>
-        <article class="feature"><div class="feature-number">03</div><div class="iconbox"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 2.3 6.7L21 11l-6.7 2.3L12 20l-2.3-6.7L3 11l6.7-2.3L12 2Z"/></svg></div><h3>Arşiv veya AI.</h3><p>Yerel AI, uyumlu bulut sağlayıcıları veya kendi özel çeviri arşivin. Seçim senin.</p></article>
-        <article class="feature"><div class="feature-number">04</div><div class="iconbox"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Kontrol sende.</h3><p>Kişisel arşivin otomatik yüklenmez. Topluluk düzeltmelerine katılım isteğe bağlıdır.</p></article>
-      </div>
-    </section>
-
-    <section class="section steps-section" id="nasil"><div class="container"><div class="section-heading"><div><p class="eyebrow">02 / BAŞLAMAK KOLAY</p><h2>ÜÇ ADIM.<br>SONRA OYUN.</h2></div><p>İlk kurulum bir kez. Sonrasında değişiklik gerektiğinde Ayarlar ekranından yönet.</p></div>
-      <div class="steps"><article><div class="step-number">01</div><h3>Kur</h3><p>Windows önizlemesini indir, kur ve uygulamayı aç.</p></article><article><div class="step-number">02</div><h3>Seç</h3><p>Oyun penceresini, altyazı/görev alanlarını ve çeviri kaynağını belirle.</p></article><article><div class="step-number">03</div><h3>Oyna</h3><p>Tek düğmeyle çeviriyi başlat. Türkçe metinleri ekranda takip et.</p></article></div></div>
-    </section>
-
-    <section class="section container" id="gizlilik"><div class="privacy-band"><div><p class="eyebrow">03 / VERİLERİN</p><h2>ÖZELİN,<br><span>SANA AİT.</span></h2><p>Çeviri arşivin otomatik olarak sunucuya gönderilmez. Yanlış çeviri bildirmek istersen gönderilecek metni önce görür, ayrıca onay verirsin. İstersen topluluk güncellemelerini tamamen kapatırsın.</p><a class="text-link" href="privacy.html">Gizlilik yaklaşımını oku <span aria-hidden="true">↗</span></a></div><div class="privacy-seal"><div class="seal-ring"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 5 52 13v17c0 16-9 25-20 30C21 55 12 46 12 30V13L32 5Z"/><path d="m23 31 6 6 13-14"/></svg></div><strong>VARSAYILAN</strong><span>PAYLAŞIM KAPALI</span></div></div></section>
-
-    <section class="section container status-section" id="durum"><div class="status-card"><div class="status-overline">PROJE DURUMU / V5.3</div><div class="status-content"><div><h2>ÖNİZLEME<br>YAYININDA.</h2><p>Windows paketi önizleme amaçlıdır. Gerçek oyun uyumu ve görev OCR alanları geliştirme sürecindedir. Sorunları ve geri bildirimleri değerlendiriyoruz.</p></div><div class="status-list"><div><span class="indicator indicator-good"></span> Windows önizleme paketi</div><div><span class="indicator indicator-good"></span> Yerel çeviri + görev alanı</div><div><span class="indicator indicator-warn"></span> Canlı topluluk güncellemeleri: aşamalı açılıyor</div><div><span class="indicator indicator-warn"></span> Android TV: henüz yayınlanmadı</div></div></div><div class="status-bottom"><span>GAYRIRESMÎ, BAĞIMSIZ PROJE</span><span>WINDOWS / PREVIEW</span></div></div></section>
-
-    <section class="section container last-cta"><p class="eyebrow">SIRADAKİ OYUNUNDA</p><h2>ALTYAZIYI<br>KAÇIRMA<span>.</span></h2><a class="button button-primary" href="https://github.com/pinticrm/pintisubs-site/releases/tag/v5.3-preview" rel="noopener noreferrer">Windows önizlemeyi indir <span aria-hidden="true">↗</span></a><p>Kurulum paketinde oyun dosyaları veya özel çeviri arşivi bulunmaz.</p></section>
-  </main>
-  <footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="assets/mark.svg" width="31" height="31" alt=""><strong>PINTI<span>SUBS</span></strong><small>Bağımsız oyun içi çeviri aracı.</small></div><div class="footer-links"><a href="privacy.html">Gizlilik</a><a href="https://pintisubs.185-233-164-41.sslip.io/notifications" rel="noopener noreferrer">Telefon bildirimleri</a><a href="https://github.com/pinticrm/pintisubs-site/releases/tag/v5.3-preview" rel="noopener noreferrer">İndir</a><a href="#top">Başa dön ↑</a></div><p>© <span id="year">2026</span> PintiSubs. Herhangi bir oyun yayıncısıyla resmî bağlantısı yoktur.</p></div></footer>
-</body>
-</html>
+<div class="ticker" aria-label="Ürün durumu"><span class="ticker-dot"></span><span>BAĞIMSIZ · AÇIK GELİŞTİRME</span><span class="ticker-divider">/</span><span>WINDOWS ÖNİZLEMESİ</span><span class="ticker-right">OYUN SENİN. KELİMELER DE.</span></div>
+<header class="masthead" id="top"><a class="wordmark" href="./" aria-label="PintiSubs ana sayfa"><span class="logo-glyph">P<span>:</span></span><span>PINTI<span>SUBS</span></span></a>
+<nav class="nav" aria-label="Ana menü"><a href="#nasil">Nasıl çalışır?</a><a href="#ozellik">Özellikler</a><a href="eslestir/">Telefon eşleştir</a><a class="nav-link-release" href="https://github.com/pinticrm/pintisubs-site/releases">Windows'u indir <span aria-hidden="true">↗</span></a></nav><button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menüyü aç">☰</button></header>
+<nav id="mobile-nav" class="mobile-nav" aria-label="Mobil menü" hidden><a href="#nasil">Nasıl çalışır?</a><a href="#ozellik">Özellikler</a><a href="eslestir/">Telefon eşleştir</a><a href="https://github.com/pinticrm/pintisubs-site/releases">Windows'u indir</a></nav>
+<main>
+<section class="hero" aria-labelledby="hero-title">
+<div class="hero-grid" aria-hidden="true"></div>
+<div class="hero-topline"><span class="hero-serial">PS / 001 — GAME TRANSLATION TOOL</span><span class="hero-status"><i></i> WINDOWS İÇİN HAZIRLANIYOR</span></div>
+<div class="hero-copy"><span class="kicker"><span class="slash">//</span> DİYALOGU KAÇIRMA</span><h1 id="hero-title">OYUNUN<br><span class="text-outline">DİLİNİ</span><br><em>ANLA<span class="dot">.</span></em></h1><p class="hero-desc">Hikâyeyi kaçırmak zorunda değilsin. Konuşmalar, görevler ve oyun içi mesajlar — tek ekran, tek tuş, anında Türkçe.</p><div class="hero-actions"><a class="cta main-cta" href="https://github.com/pinticrm/pintisubs-site/releases">WINDOWS'U İNDİR <span aria-hidden="true">↗</span></a><a class="cta secondary-cta" href="#nasil">NASIL ÇALIŞIR? <span aria-hidden="true">↓</span></a></div><p class="preview-note">Geliştirme önizlemesi · Oyun dosyalarını değiştirmez · Son indirmeler GitHub Releases'te</p></div>
+<div class="hero-device" aria-label="PintiSubs oyun içi çeviri örneği"><div class="device-outer"><div class="device-header"><span class="device-led"></span><span>OYUN İÇİ / ÇEVİRİ ÖNİZLEMESİ</span><span>EN → TR</span></div><div class="device-scene"><div class="scene-grain"></div><div class="scene-horizon"></div><div class="scene-crosshair">+</div><div class="scene-caption original"><span>ENGLISH · DİYALOG</span><p>"You ever miss the army?"</p></div><div class="scene-caption translated"><span>ÇEVİRİ · TÜRKÇE</span><p>"Askerliği hiç özlüyor musun?"</p></div><div class="scene-objective"><i class="objective-check"></i><span>GÖREV: KARIM İLE KONUŞ</span></div><div class="scene-phone"><div class="phone-avatar">R</div><div><b>Raul</b><p>Sinfrontera National Bank'ta buluş. Orada ol.</p></div></div></div><div class="device-footer"><span><i></i> EKRAN ÜZERİ ÇEVİRİ</span><span>03 AKTİF ALAN</span></div></div><div class="device-behind" aria-hidden="true">PS/<br>2026</div></div>
+<div class="hero-bottom"><span class="scroll-cue">AŞAĞI KAYDIR <b>↓</b></span><span>01 — HER OYUNDA DAHA FAZLASINI ANLA</span></div>
+</section>
+<section class="strip" aria-label="PintiSubs temel özellikleri"><div><strong>03</strong><span>AYRI METİN ALANI</span></div><div><strong>01</strong><span>BAŞLAT / DURDUR</span></div><div><strong>00</strong><span>OYUN DOSYASI MÜDAHALESİ</span></div><div><strong>∞</strong><span>HİKÂYEYE ODAKLAN</span></div></section>
+<section class="section features" id="ozellik"><div class="section-heading"><div><span class="section-index">01 / NELERİ ÇEVİRİR?</span><h2>GÖRDÜĞÜNÜ<br><em>ANLARSIN.</em></h2></div><p>Tek bir altyazı kutusuna sıkışmadık. Oyun dünyasındaki farklı yazıları ayrı yakalayan, gereksiz taramaları azaltan bir sistem.</p></div>
+<div class="feature-grid"><article class="feature f-large"><span class="feature-no">01 — DİYALOG</span><div class="feature-art dialogue-art" aria-hidden="true"><p class="art-orig">You ever miss the army?</p><p class="art-tr">Askerliği hiç özlüyor musun?</p><span class="art-sub">ENGLISH → TÜRKÇE</span></div><div class="feature-foot"><h3>Konuşmalar.</h3><p>Karakterin ne söylediğini anında yakala.</p></div></article><article class="feature f-orange"><span class="feature-no">02 — HEDEFLER</span><div class="feature-art quest-art" aria-hidden="true"><span>◈ GÖREV GÜNCELLENDİ</span><strong>KARIM İLE<br>KONUŞ.</strong><span>HEDEF ANLAŞILDI ✓</span></div><div class="feature-foot"><h3>Görevler.</h3><p>Ne yapacağını bir bakışta gör.</p></div></article><article class="feature f-black"><span class="feature-no">03 — OYUN İÇİ MESAJLAR</span><div class="feature-art phone-art" aria-hidden="true"><div><b>Raul</b><span>●</span><p>Bankada buluşalım. Orada ol.</p></div></div><div class="feature-foot"><h3>Telefon / HUD.</h3><p>Oyun içi kartlar, bildirimler, kısa mesajlar.</p></div></article></div>
+</section>
+<section class="section how" id="nasil"><div class="section-heading"><div><span class="section-index">02 / BAŞLAMAK İÇİN</span><h2>ÜÇ ADIM.<br><em>DAHA FAZLASI YOK.</em></h2></div><p>Teknik ayarlarla uğraşmak istemiyorsan başlangıç ekranındaki yönlendirmeleri izle. İstersen yerel AI, istersen bulut çevirisi.</p></div><div class="steps"><article><span class="step-number">01<span>↗</span></span><h3>Yükle.</h3><p>Windows önizlemesini indir. Uygulamayı ilk kez açtığında kurulumu tamamla.</p></article><article><span class="step-number">02<span>↗</span></span><h3>Seç.</h3><p>Oyun ekranını ve çevrilecek alanları belirle. Kullanacağın çeviri motorunu seç.</p></article><article><span class="step-number">03<span>↗</span></span><h3>Oyna.</h3><p>Tek düğmeyle çeviriyi başlat, geri dön ve hikâyenin tadını çıkar.</p></article></div></section>
+<section class="section engine"><div class="engine-inner"><div class="engine-copy"><span class="section-index">03 / KONTROL SENDE</span><h2>YERELDE<br><em>GÜÇLÜ.</em></h2><p>Ollama ve LM Studio ile cihazında çalış. İstersen DeepL, Google veya bulut AI sağlayıcısı seç. Servislerin kullanımı ve ücretleri seçimine bağlıdır.</p><a href="#indir" class="text-link">WINDOWS SÜRÜMÜ <span>↗</span></a></div><div class="engine-tiles"><div><span class="tile-icon">⌁</span><strong>YEREL AI</strong><small>Özel metin bilgisayarında kalabilir.</small></div><div><span class="tile-icon">⇄</span><strong>FARKLI SAĞLAYICILAR</strong><small>Yapılandırmana uygun motoru kullan.</small></div><div><span class="tile-icon">⊞</span><strong>ONAYLI GÜNCELLEMELER</strong><small>Arşiv düzeltmeleri indirilir; kişisel konuşmalar otomatik gönderilmez.</small></div><div class="tile-accent">HİKÂYE<br>DEVAM<br>ETSİN<span>.</span></div></div></div></section>
+<section class="section pairing" id="telefon"><div class="pairing-inner"><span class="section-index">04 / TELEFONUNU BAĞLA</span><div class="pairing-text"><div><h2>KODU GİR.<br><em>HEPSİ BU.</em></h2><p>Üyelik, şifre veya uzun form yok. Masaüstünde oluşan sekiz haneli kodla yalnız sürüm duyuruları için telefonunu bağla. Oyun içi mesajların telefona gönderilmez.</p><a href="eslestir/" class="cta pair-cta">TELEFONU EŞLEŞTİR <span aria-hidden="true">↗</span></a></div><div class="pairing-digits" aria-label="Sekiz haneli kod örneği"><span>2</span><span>8</span><span>0</span><span>6</span><i></i><span>4</span><span>1</span><span>9</span><span>5</span><small>TEK KULLANIMLIK · 05:00</small></div></div></div></section>
+<section class="section download" id="indir"><span class="section-index">05 / HAZIR MISIN?</span><div class="download-row"><div><h2>OYUNA<br><em>GERİ DÖN.</em></h2><p>Windows için yayınlanan en güncel önizlemeye GitHub Releases üzerinden ulaş. Beta olduğu için önce küçük bir test yapmanı öneriyoruz.</p></div><a class="download-ring" href="https://github.com/pinticrm/pintisubs-site/releases" aria-label="En güncel Windows sürümünü indir"><span>WINDOWS<br>ÖNİZLEMESİNİ<br>İNDİR</span><strong>↗</strong></a></div></section>
+</main>
+<footer class="footer"><div class="footer-upper"><a class="wordmark" href="#top"><span class="logo-glyph">P<span>:</span></span><span>PINTI<span>SUBS</span></span></a><p>Hikâyeyi kaçırma.</p></div><div class="footer-lower"><span>© 2026 PINTISUBS / BAĞIMSIZ PROJE</span><nav aria-label="Alt menü"><a href="eslestir/">Telefon eşleştirme</a><a href="privacy.html">Gizlilik</a><a href="https://github.com/pinticrm/pintisubs-site/releases">Sürümler</a></nav><span>HERHANGİ BİR OYUN YAYINCISIYLA RESMÎ BAĞLANTISI YOKTUR.</span></div></footer>
+</body></html>
